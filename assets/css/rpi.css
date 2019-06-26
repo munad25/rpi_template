@@ -1,0 +1,37 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+
+.box-depth{
+  box-shadow: 0 0 8px #a0a0a0;
+}
+
+hr.title{
+  width: 35%;
+  border-top: 3px solid #858585;
+}
+
+body {
+  padding-top: 3.5rem;
+  }
+
+nav.navbar{
+  background-color: rgb(36, 8, 74);
+}
+
+.jumbotron{
+  background: url('../../assets/images/jumbotron.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0;
+  border-radius: 0;
+
+}
+
+@media (max-width: 767.98px) {
+  .section-title{
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+}
+  
