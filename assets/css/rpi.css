@@ -1,20 +1,54 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 
 .box-depth{
-  box-shadow: 0 0 8px #a0a0a0;
+  box-shadow: 0 0 10px #000000;
 }
 
 hr.title{
-  width: 35%;
+  width: 25%;
   border-top: 3px solid #858585;
 }
 
+.space-1{
+  display: inline-block;
+  width: 20%;
+}
+
+i.fab{
+  font-size: 1.5rem;
+}
+
+footer p{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 body {
-  padding-top: 3.5rem;
+  /* padding-top: 3.5rem; */
   }
 
-nav.navbar{
-  background-color: rgb(36, 8, 74);
+.fixed-top{
+  background-color: rgba(0, 0, 0, 0.558);
+}
+
+.fixed-top .nav-item .nav-link{
+  color: #ffffff;
+}
+
+.fixed-top .nav-item.active .nav-link{
+  color: #858585;
+}  
+.fixed-top.scrolled{
+  background-color: rgb(35, 0, 72) !important;
+  transition: background-color 200ms linear;
+}
+
+.fixed-top.scrolled .nav-link{
+  color: #6c6c6c;
+}
+
+.fixed-top.scrolled .nav-item.active .nav-link{
+  color: #ffffff;
 }
 
 .jumbotron{
@@ -22,10 +56,24 @@ nav.navbar{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: 0 -100px;
   margin: 0;
   border-radius: 0;
+  min-height: 55vh;
+  
+}
 
+section#our-team{
+  background: url('https://martechtoday.com/wp-content/uploads/2018/08/artificial-intelligence-ai-brain-machine-learning-ss-1920_d7k9rw.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0;
+  padding: 0;
+}
+section.mask{
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 767.98px) {
@@ -33,5 +81,22 @@ nav.navbar{
     text-align: center;
     margin-top: 2.5rem;
   }
-}
+
+  .p-md-up-1{
+    margin-top: 2rem;
+  }
+
+  .fixed-top{
+    background-color: rgb(35, 0, 72) !important;
+    transition: background-color 200ms linear;
+  }
   
+  .fixed-top .nav-link{
+    color: #6c6c6c;
+  }
+  
+  .fixed-top .nav-item.active .nav-link{
+    color: #ffffff;
+  }
+
+}
